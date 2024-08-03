@@ -252,7 +252,7 @@ transform: translate(-50%,-50%);
 border-radius: 4px 0px 0px 0px;
 opacity: 0px;
 background: #FCFCFC;
-box-shadow: cu valorile 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
@@ -380,7 +380,7 @@ margin-bottom: 16px;
     padding: 8px 16px;
     outline: transparent;
     resize: none;
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea-comment:focus {
@@ -428,8 +428,9 @@ color: #8E8F99;
     fill: transparent; 
 }
 
-.input-conditions:checked + .conditions-span {
+.input-conditions:checked + .conditions-label .conditions-span {
    background-color:  #404bbf;
+   border: none; 
    fill: #F4F4FD;
 }
 
@@ -446,8 +447,7 @@ color: #4D5AE5;
 .send-button {
     display: block;
     min-width: 169px; 
-    height: 56px; 
-
+    height: 56px;
     font-weight: 500; 
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -829,8 +829,8 @@ padding-left: 156px;
 .subscribe-paragraph {
     font-family: Roboto;
     font-size: 16px;
-    font-weight: 1.5;
-    line-height: 24px;
+    font-weight: 500;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: left;
     color: #FFFFFF;
@@ -883,7 +883,7 @@ opacity: 0px;
 background-color: #4D5AE5;
 border: none;
 
-font-family: Roboto;
+font-family: "Roboto", sans-serif; 
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5;

@@ -447,7 +447,7 @@ color: #4D5AE5;
 .send-button {
     display: block;
     min-width: 169px; 
-    height: 56px;
+    min-height: 56px;
     font-weight: 500; 
     line-height: 1.5;
     letter-spacing: 0.04em;
